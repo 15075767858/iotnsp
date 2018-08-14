@@ -9,6 +9,6 @@ Ext.define('iotnsp.store.Products',{
     autoLoad:true,
     proxy:{
         type:"api",
-        url:"~api/products"
+        url:"/v1/products"
     }
 })
