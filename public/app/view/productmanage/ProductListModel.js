@@ -4,9 +4,5 @@ Ext.define('iotnsp.view.productmanage.ProductListModel', {
     data: {
         name: 'iotnsp'
     },
-    stores:{
-        products:{
-            type:"Products"
-        }
-    }
+
 });

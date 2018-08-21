@@ -12,8 +12,9 @@ Ext.define('iotnsp.Application', {
         'Industry',
         // TODO: add global / shared stores here
     ],
-
-    id:"mainApp",
+    models:[
+        'User'
+    ],
     defaultToken:"iotnsp",
     launch: function () {
         // TODO - Launch the application

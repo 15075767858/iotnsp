@@ -2,21 +2,32 @@ Ext.define('iotnsp.view.productmanage.ProductList', {
     extend: 'Ext.grid.Panel',
 
     requires: [
-        'iotnsp.view.productmanage.ProductListController',
-        'iotnsp.view.productmanage.ProductListModel'
+        //'iotnsp.view.productmanage.ProductListController',
+        //'iotnsp.view.productmanage.ProductListModel',
+        //'iotnsp.view.productmanage.ProductManage'
     ],
+    id: 'b',
 
-    controller: 'productmanage-productlist',
+    // controller: 'productmanage-productlist',
+    // viewModel: {
+    //     type: 'productmanage-productlist'
+    // },
+    controller: 'productmanage-productmanage',
     viewModel: {
-        type: 'productmanage-productlist'
+        type: 'productmanage-productmanage'
     },
-
     userCls: 'big-100',
     title: "产品列表",
     xtype: 'productlist',
     store: {
         type: 'Products'
     },
+    listeners:{
+        boxready:function () {
+            new iotnsp.view.productmanage.TemplateEdit
+        }
+    },
+
     dockedItems: [{
         xtype: 'toolbar',
         dock: 'top',
@@ -45,7 +56,8 @@ Ext.define('iotnsp.view.productmanage.ProductList', {
                 glyph: 88,
                 xtype: 'button',
                 handler: "onAddProduct"
-            }]
+            }
+            ]
     }],
     columns: [
         {
@@ -75,7 +87,7 @@ Ext.define('iotnsp.view.productmanage.ProductList', {
             xtype: 'actioncolumn',
             align: 'center',
             items: [{
-                iconCls: 'x-fa fa-cog',
+                iconCls: 'x-fa fa-pencil',
                 //row:"<div>dfaf</div>"
                 //iconCls: 'x-fa fa-cog',
                 tooltip: '编辑',

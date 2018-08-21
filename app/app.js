@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var authRouter = require('./routes/auth');
 var productRouter = require('./routes/product');
-
+var uploadRouter = require('./routes/upload');
 var app = express();
 
 // view engine setup
@@ -23,10 +23,10 @@ app.use(cookieParser());
 
 
 app.use('/v1/', indexRouter);
-
 app.use('/v1/users', usersRouter);
 app.use('/v1/auth', authRouter);
 app.use('/v1/products', productRouter);
+app.use('/v1/upload', uploadRouter);
 app.use(sassMiddleware({
     src: path.join(__dirname, '../public'),
     dest: path.join(__dirname, '../public'),

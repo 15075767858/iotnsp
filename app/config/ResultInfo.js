@@ -27,3 +27,4 @@ exports.REMOVE_SERVER_UNKNOW_ERROR = {code: 102, message: "远程服务器未知
 
 exports.NOT_LOGIN = {code: 10000, message: "未登录",status:400};
 
+exports.UPLOAD_ERROR = {code: 10005, message: "上传图片失败",status:500};

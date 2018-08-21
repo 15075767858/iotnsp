@@ -21,7 +21,7 @@ router.all('/*', function (req, res, next) {
 //
 //     res.send(users);
 // });
-router.get('/all', async function (req, res, next) {
+router.get('/', async function (req, res, next) {
     var user = await UserService.userInfo(new User(req.cookies))
     var products = await ProductService.productAll(user)
     res.send(ResultUtil.success(products))
