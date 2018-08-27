@@ -20,6 +20,9 @@ Ext.define('iotnsp.model.User', {
     ],
 //    idProperty:"email",
 
+    data:{
+
+    },
     proxy: {
         reader:{
             type:'json',

@@ -54,7 +54,7 @@ function updateDataByField(table,data,field,value) {
         pool.getConnection(function (err, connection) {
             connection.query(`UPDATE ${table} SET ? WHERE ${field} = ${pool.escape(value)}`, [data], function (err, results) {
                 connection.release();
-                console.log(arguments)
+                //console.log(arguments)
                 if (err) {
                     reject(err)
                 } else {

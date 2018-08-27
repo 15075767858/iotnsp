@@ -23,8 +23,8 @@ Ext.define('iotnsp.view.productmanage.TemplateEdit', {
     defaults: {
         border: 1,
         //height: '100%',
-
     },
+
     items: [
         {
             flex: 1,
@@ -39,84 +39,33 @@ Ext.define('iotnsp.view.productmanage.TemplateEdit', {
             },
             items: [
                 {
-                    text: '扫码主页展示区'
+                    text: '扫码主页展示区',
+                    type: '',
+                    handler: 'navHandler'
                 }, {
-                    text: '导航一'
+                    text: '导航一',
+                    type: 'nav1',
+                    handler: 'navHandler'
                 }, {
-                    text: '导航二'
+                    text: '导航二',
+                    type: 'nav2',
+                    handler: 'navHandler'
                 }, {
-                    text: '导航三'
-                },
-            ]
-        },
-
-        {
-            scrollable: 'y',
-            flex: 3,
-            defaults: {
-                width: '100%',
-                margin: 0
-            },
-            items: [
-                {
-                    xtype: 'textfield',
-                    emptyText: '请输入标题'
-                },
-                {
-                    xtype: 'image',
-                    src: 'http://v2.cniotroot.cn/static/v1/images/templateEdit/style3.png',
-                    width: '100%'
-                },
-                {
-                    //xtype: 'panel',
-                    //height:100,
-                    layout: {
-                        type: 'hbox',
-                        align: 'stretchmax'
-                    },
-
-                    items: [
-                        {
-                            xtype: 'image',
-                            src: '/resources/test/qiye_logo.jpg',
-                            width: '30%',
-                            height: 100
-                        },
-                        {
-                            margin: 10,
-                            width: '70%',
-                            bind: {
-                                html: "<h3>qee</h3><div>物联网标识：xxxxx</div><div>生产厂家：沧州盐业集团公司</div>",
-                            }
-                        }
-                    ]
+                    text: '导航三',
+                    type: 'nav3',
+                    handler: 'navHandler'
                 }, {
-                    title: "扫码提示",
-                    html: '<div>该标识由国家物联网标识平台签发授权 沧州盐业集团有限公司 商品溯源防伪使用。</div>' +
-                    '<div>该标识码无异常记录，请核实实物。</div>'
-                },
-                {
-                    reference: 'modulegridcontainer',
-                    items: [{
-                        title: '1',
-                        xtype: 'modulegrid'
-                    }, {
-                        title: '2',
-                        xtype: 'modulegrid'
-                    }, {
-                        title: '3',
-                        xtype: 'modulegrid'
-                    }]
-                },
-                {
-                    xtype: 'testcom'
-                },
-                {
-                    xtype: 'button',
-                    text: '点我添加模块',
-                    handler: 'addModuleGrid'
+                    text: '保存数据',
+                    handler: 'saveTemplateData'
+                }, {
+                    text: '载入数据',
+                    handler: 'loadTemplateData'
                 }
             ]
+        },
+        {
+            xtype: 'centertemplate',
+            flex: 3,
         },
         {
             flex: 3,
@@ -124,18 +73,93 @@ Ext.define('iotnsp.view.productmanage.TemplateEdit', {
         }
     ],
     listeners: {
-        boxready: function () {
-            a = this.viewModel
-        }
+        boxready: 'templateReady'
     },
 });
+Ext.define('iotnsp.view.productmanage.TemplateEdit.CenterTemplate', {
+        extend: 'Ext.panel.Panel',
+        xtype: 'centertemplate',
+        scrollable: 'y',
+        defaults: {
+            width: '100%',
+            margin: 0
+        },
+        items: [
+            {
+                xtype: 'textfield',
+                emptyText: '请输入标题',
+                bind: '{template.pageTitle}',
+                listeners: {
+                    focus: 'pageTitleFocus'
+                }
+            },
+            {
+                xtype: 'image',
+                src: 'http://v2.cniotroot.cn/static/v1/images/templateEdit/style3.png',
+                width: '100%'
+            },
+            {
+                //xtype: 'panel',
+                //height:100,
+                layout: {
+                    type: 'hbox',
+                    align: 'stretchmax'
+                },
 
-
+                items: [
+                    {
+                        xtype: 'image',
+                        src: '/resources/test/qiye_logo.jpg',
+                        width: '30%',
+                        height: 100
+                    },
+                    {
+                        margin: 10,
+                        width: '70%',
+                        bind: {
+                            html: "<h3>qee</h3><div>物联网标识：xxxxx</div><div>生产厂家：沧州盐业集团公司</div>",
+                        }
+                    }
+                ]
+            }, {
+                title: "扫码提示",
+                html: '<div>该标识由国家物联网标识平台签发授权 沧州盐业集团有限公司 商品溯源防伪使用。</div>' +
+                '<div>该标识码无异常记录，请核实实物。</div>'
+            },
+            {
+                reference: 'modulegridcontainer',
+                items: [{
+                    title: "1",
+                    xtype: 'modulegrid'
+                }, {
+                    title: "2",
+                    xtype: 'modulegrid'
+                }, {
+                    title: "3",
+                    xtype: 'modulegrid'
+                }]
+            },
+            {
+                xtype: 'testcom'
+            },
+            {
+                xtype: 'button',
+                text: '点我添加模块',
+                handler: 'addModuleGrid'
+            }
+        ]
+    },
+)
 Ext.define('iotnsp.view.productmanage.TemplateEdit.ModuleGrid', {
     extend: 'Ext.grid.Panel',
     xtype: 'modulegrid',
-    title: '基本信息',
+    //title: '基本信息',
     reference: 'modelgrid',
+    header: {
+        listeners: {
+            click: 'modTitleClick'
+        }
+    },
     tools: [
         {
             //type: 'up',
@@ -159,6 +183,9 @@ Ext.define('iotnsp.view.productmanage.TemplateEdit.ModuleGrid', {
             //type: 'minus'
         }
     ],
+    listeners: {
+        cellclick: 'modgridcellClick'
+    },
     defaults: {
         width: '100%'
     },
@@ -257,246 +284,357 @@ Ext.define('iotnsp.view.productmanage.TemplateEdit.ModuleGrid', {
 
 })
 
-Ext.define('editform',
+Ext.define('iotnsp.view.productmanage.RightEditForm',
     {
         xtype: 'editform',
         extend: 'Ext.form.Panel',
-        title: '栏目编辑',
+        //title: '栏目编辑',
         bodyPadding: 10,
-        controller: 'productmanage-templateedit',
-        viewModel: {
-            type: 'productmanage-templateedit'
-        },
 
         items: [
             {
-                xtype: 'DateTimeField'
-            },
-            {
-                xtype: 'textfield',
-                fieldLabel: '字段名称',
-                bind: '{modelgrid.selection.field_name}'
-
-            }, {
-                xtype: 'fieldcontainer',
-                fieldLabel: '关联系统数据',
-                defaultType: 'radiofield',
-                defaults: {
-                    flex: 1
+                bind: {
+                    hidden: '{editDisplay!="pageTitle"}',
+                    disabled: '{editDisplay!="pageTitle"}'
                 },
-                layout: 'hbox',
                 items: [
                     {
-                        boxLabel: '不关联',
-                        name: 'size',
-                        inputValue: 'm',
-                        id: 'radio1',
-                        bind: '{!modelgrid.selection.relation_system}',
-                        reference: 'relationNormal',
+                        html: '<h1>网页标题栏</h1>'
+                    }, {
+                        xtype: 'textfield',
+                        fieldLabel: '网页标题',
+                        emptyText: '请输入网页标题',
+                        bind: '{template.pageTitle}'
                     },
                     {
-                        boxLabel: '关联',
-                        name: 'size',
-                        inputValue: 'l',
-                        id: 'radio2',
-                        bind: '{modelgrid.selection.relation_system}',
-                        reference: 'relationSystem',
-                    },
-
+                        html: '注：请填入网页标题栏，建议使用产品名称，如不填写，默认将为“国家物联网标识平台”'
+                    }
                 ]
             },
             {
                 bind: {
-                    disabled: '{!relationNormal.checked}',
-                    hidden: '{!relationNormal.checked}'
+                    hidden: '{editDisplay!="nav1"}',
+                    disabled: '{editDisplay!="nav1"}'
                 },
                 items: [
                     {
-                        fieldLabel: '选择字段类型',
-                        xtype: 'combo',
-                        reference: 'fieldType',
-                        bind: '{modelgrid.selection.field_type}',
-                        store: {
-                            storeId: 'aaa',
-                            field: ['name', 'type'],
-                            data: [
-                                {name: '字段文本', type: 'string', selected: true},
-                                {name: '时间文本', type: 'date'},
-                                {name: '图片链接', type: 'img'},
-                                {name: '样式文本', type: 'html'},
-                                {name: '视频', type: 'video'},
-                                {name: '图片组', type: 'imgs'}
-                            ]
+                        html: '<h1>导航栏设置</h1>'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '导航栏一',
+                        emptyText: '输入导航栏名称',
+                        bind: '{template.nav1_name}'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '链接',
+                        emptyText: '输入导航栏链接',
+                        bind: '{template.nav1_value}'
+                    }
+                ]
+            },
+            {
+                bind: {
+                    hidden: '{editDisplay!="nav2"}',
+                    disabled: '{editDisplay!="nav2"}'
+                },
+                items: [
+                    {
+                        html: '<h1>导航栏设置</h1>'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '导航栏二',
+                        emptyText: '输入导航栏名称',
+                        bind: '{template.nav2_name}'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '链接',
+                        emptyText: '输入导航栏链接',
+                        bind: '{template.nav2_value}'
+                    }
+                ]
+            },
+            {
+                bind: {
+                    hidden: '{editDisplay!="nav3"}',
+                    disabled: '{editDisplay!="nav3"}'
+                },
+                items: [
+                    {
+                        html: '<h1>导航栏设置</h1>'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '导航栏三',
+                        emptyText: '输入导航栏名称',
+                        bind: '{template.nav3_name}'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '链接',
+                        emptyText: '输入导航栏链接',
+                        bind: '{template.nav3_value}'
+                    }
+                ]
+            },
+            {
+                bind: {
+                    hidden: '{editDisplay!="modTitle"}',
+                    disabled: '{editDisplay!="modTitle"}'
+                },
+                items: [
+                    {
+                        html: '<h1>模块添加</h1>'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '基本信息',
+                        emptyText: '模块名称',
+                        bind: '{modTitle}'
+                    },
+                ]
+            },
+
+            {
+                bind: {
+                    hidden: '{editDisplay!="modEdit"}',
+                    disabled: '{editDisplay!="modEdit"}'
+                },
+                items: [
+                    {
+                        html: '<h1>栏目编辑</h1>'
+                    },
+                    {
+                        xtype: 'textfield',
+                        fieldLabel: '字段名称',
+                        bind: '{modelgrid.selection.field_name}'
+                    },
+
+                    {
+                        xtype: 'fieldcontainer',
+                        fieldLabel: '关联系统数据',
+                        defaultType: 'radiofield',
+                        defaults: {
+                            flex: 2,
+                            margin: '0 0 0 10'
                         },
-                        value: 'string',
-                        valueField: 'type',
-                        displayField: 'name'
+                        layout: 'hbox',
+                        items: [
+                            {
+                                boxLabel: '不关联',
+                                name: 'size',
+                                inputValue: 'm',
+                                id: 'radio1',
+                                bind: '{!modelgrid.selection.relation_system}',
+                                reference: 'relationNormal',
+                            },
+                            {
+                                boxLabel: '关联',
+                                name: 'size',
+                                inputValue: 'l',
+                                id: 'radio2',
+                                bind: '{modelgrid.selection.relation_system}',
+                                reference: 'relationSystem',
+                            },
+
+                        ]
                     },
                     {
                         bind: {
-                            disabled: '{relationSystem.checked}',
-                            hidden: '{relationSystem.checked}'
+                            disabled: '{!relationNormal.checked}',
+                            hidden: '{!relationNormal.checked}'
                         },
-                        xtype: 'container',
                         items: [
                             {
-                                xtype: 'textfield',
-                                emptyText: '字段内容',
-                                bind: {
-                                    disabled: '{fieldType.selection.type!="string"}',
-                                    hidden: '{fieldType.selection.type!="string"}',
-                                    value: '{modelgrid.selection.field_value}',
-                                }
+                                fieldLabel: '选择字段类型',
+                                xtype: 'combo',
+                                reference: 'fieldType',
+                                bind: '{modelgrid.selection.field_type}',
+                                store: {
+                                    storeId: 'aaa',
+                                    field: ['name', 'type'],
+                                    data: [
+                                        {name: '字段文本', type: 'string'},
+                                        {name: '时间文本', type: 'date'},
+                                        {name: '图片链接', type: 'img'},
+                                        {name: '样式文本', type: 'html'},
+                                        {name: '视频', type: 'video'},
+                                        //{name: '图片组', type: 'imgs'}
+                                    ]
+                                },
+                                value: 'string',
+                                valueField: 'type',
+                                displayField: 'name'
                             },
                             {
                                 bind: {
-                                    disabled: '{fieldType.selection.type!="date"}',
-                                    hidden: '{fieldType.selection.type!="date"}',
+                                    disabled: '{relationSystem.checked}',
+                                    hidden: '{relationSystem.checked}'
                                 },
-                                xtype: 'fieldcontainer',
-                                fieldLabel: '时间选择',
+                                xtype: 'container',
                                 items: [
                                     {
-                                        xtype: 'datefield',
-                                        emptyText: '选择日期',
-                                        bind: '{modelgrid.selection.field_value}',
+                                        xtype: 'textfield',
+                                        emptyText: '字段内容',
+                                        bind: {
+                                            disabled: '{fieldType.selection.type!="string"}',
+                                            hidden: '{fieldType.selection.type!="string"}',
+                                            value: '{modelgrid.selection.field_value}',
+                                        }
                                     },
-
-                                ]
-                            },
-                            {
-                                xtype: 'fieldcontainer',
-                                bind: {
-                                    disabled: '{fieldType.selection.type!="img"}',
-                                    hidden: '{fieldType.selection.type!="img"}',
-                                },
-                                fieldLabel: '时间选择',
-                                items: [
                                     {
-                                        xtype: 'form',
-                                        url: '/v1/upload/img',
-                                        items: [{
-                                            xtype: 'filefield',
-                                            fieldLabel: '图片',
-                                            msgTarget: 'side',
-                                            allowBlank: false,
-                                            anchor: '100%',
-                                            name:'img',
-                                            buttonText: '选择图片',
-                                            accept: 'image/jpeg,image/png,image/x-ms-bmp',
-                                            listeners: {
-                                                change: function (img) {
-                                                    img.up('form').submit({
-                                                        waitMsg: 'Uploading your photo...',
-                                                        success:function(form, action){
+                                        bind: {
+                                            disabled: '{fieldType.selection.type!="date"}',
+                                            hidden: '{fieldType.selection.type!="date"}',
+                                        },
+                                        xtype: 'fieldcontainer',
+                                        fieldLabel: '时间选择',
+                                        items: [
+                                            {
+                                                xtype: 'datefield',
+                                                emptyText: '选择日期',
+                                                bind: '{modelgrid.selection.field_value}',
+                                            },
 
-                                                            console.log(arguments)
-                                                        },
-                                                        failure:function(){
-                                                            console.log(arguments)
-                                                        }
-                                                    })
+                                        ]
+                                    },
+                                    {
+                                        xtype: 'fieldcontainer',
+                                        bind: {
+                                            disabled: '{fieldType.selection.type!="img"}',
+                                            hidden: '{fieldType.selection.type!="img"}',
+                                        },
+                                        fieldLabel: '时间选择',
+
+                                        items: [
+                                            {
+                                                xtype: 'form',
+                                                url: '/v1/upload/img',
+                                                items: [{
+                                                    xtype: 'filefield',
+                                                    fieldLabel: '图片',
+                                                    msgTarget: 'side',
+                                                    allowBlank: false,
+                                                    anchor: '100%',
+                                                    name: 'img',
+                                                    buttonText: '选择图片',
+                                                    accept: 'image/jpeg,image/png,image/x-ms-bmp',
+                                                    listeners: {
+                                                        change: 'uploadImg'
+                                                    }
+                                                }]
+                                            },
+                                            {
+                                                xtype: 'textfield',
+                                                emptyText: '图片链接',
+                                                bind: '{modelgrid.selection.field_value}',
+                                            },
+                                            {
+                                                xtype: 'image',
+                                                width: 300,
+                                                height: 300,
+                                                border: '1px red solid',
+                                                bind: {
+                                                    disabled: '{fieldType.selection.type!="img"}',
+                                                    hidden: '{fieldType.selection.type!="img"}',
+                                                    src: '{imgSrc}'
                                                 }
                                             }
-                                        }]
+                                        ]
                                     },
                                     {
-                                        xtype: 'image',
-                                        width: 100,
-                                        height: 100,
-                                        border: '1px red solid',
-                                        bind: '{modelgrid.selection.field_value}'
-                                    }
-                                ]
-                            },
-                            {
-                                bind: {
-                                    disabled: '{fieldType.selection.type!="html"}',
-                                    hidden: '{fieldType.selection.type!="html"}',
-                                },
-                                xtype: 'htmleditor'
-                            },
-                            {
-                                bind: {
-                                    disabled: '{fieldType.selection.type!="video"}',
-                                    hidden: '{fieldType.selection.type!="video"}',
-                                },
-                                items: [
+                                        bind: {
+                                            disabled: '{fieldType.selection.type!="html"}',
+                                            hidden: '{fieldType.selection.type!="html"}',
+                                            value: '{modelgrid.selection.field_value}',
+                                        },
+                                        xtype: 'htmleditor'
+                                    },
                                     {
-
-                                        xtype: 'textfield',
-                                        emptyText: '视频描述',
-                                    }, {
-                                        xtype: 'textfield',
-                                        emptyText: '视频链接'
+                                        bind: {
+                                            disabled: '{fieldType.selection.type!="video"}',
+                                            hidden: '{fieldType.selection.type!="video"}',
+                                        },
+                                        items: [
+                                            {
+                                                hidden: true,
+                                                xtype: 'textfield',
+                                                emptyText: '视频描述',
+                                            }, {
+                                                xtype: 'textfield',
+                                                bind: {
+                                                    value: '{modelgrid.selection.field_value}',
+                                                },
+                                                //bind:'{modelgrid.selection.field_value}',
+                                                //value: '{modelgrid.selection.field_value}',
+                                                emptyText: '视频链接'
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        bind: {
+                                            disabled: '{fieldType.selection.type!="imgs"}',
+                                            hidden: '{fieldType.selection.type!="imgs"}',
+                                        },
+                                        items: [
+                                            {
+                                                xtype: 'form',
+                                                url: '/v1/upload/img',
+                                                items: [{
+                                                    xtype: 'filefield',
+                                                    fieldLabel: '图片',
+                                                    msgTarget: 'side',
+                                                    allowBlank: false,
+                                                    anchor: '100%',
+                                                    name: 'img',
+                                                    buttonText: '选择图片',
+                                                    accept: 'image/jpeg,image/png,image/x-ms-bmp',
+                                                    listeners: {
+                                                        change: 'uploadImgs'
+                                                    }
+                                                }]
+                                            },
+                                        ]
                                     }
+
                                 ]
                             },
-                            {
-                                bind: {
-                                    disabled: '{fieldType.selection.type!="images"}',
-                                    hidden: '{fieldType.selection.type!="images"}',
-                                },
-                                items: [
-                                    {
-                                        xtype: 'filefield',
-                                        fieldLabel: '图片',
-                                        msgTarget: 'side',
-                                        allowBlank: false,
-                                        anchor: '100%',
-                                        buttonText: '选择图片',
-                                    }
-                                ]
-                            }
-
                         ]
                     },
+                    {
+
+                        xtype: 'container',
+                        bind: {
+                            disabled: '{!relationSystem.checked}',
+                            hidden: '{!relationSystem.checked}'
+                        },
+                        items: {
+                            bind: '{modelgrid.selection.field_type}',
+                            xtype: 'combo',
+                            valueField: 'type',
+                            displayField: 'name',
+                            store: {
+                                field: ['name', 'type'],
+                                data: [
+                                    {name: '经销商', type: 'retailer'},
+                                    {name: '订单号', type: 'order'},
+                                    {name: '生产批次', type: 'produce_batch'},
+                                    {name: '物联网标识', type: 'iot_id'},
+                                    {name: '生产时间', type: 'produce_time'},
+                                    {name: '出货日期', type: 'order_time'}
+                                ]
+                            }
+                        }
+                    }
                 ]
             },
 
-            {
-
-                xtype: 'container',
-                bind: {
-                    disabled: '{!relationSystem.checked}',
-                    hidden: '{!relationSystem.checked}'
-                },
-                items: {
-                    bind: '{modelgrid.selection.field_type}',
-                    xtype: 'combo',
-                    valueField: 'type',
-                    displayField: 'name',
-                    store: {
-                        field: ['name', 'type'],
-                        data: [
-                            {name: '经销商', type: 'retailer'},
-                            {name: '订单号', type: 'order'},
-                            {name: '生产批次', type: 'produce_batch'},
-                            {name: '物联网标识', type: 'iot_id'},
-                            {name: '生产时间', type: 'produce_time'},
-                            {name: '出货日期', type: 'order_time'}
-                        ]
-                    }
-                }
-            }
         ]
     })
 
-Ext.define('DateTimeField', {
-    extend: 'Ext.form.field.Base',
-    xtype: 'DateTimeField',
-    items: [
-        {
-            xtype: 'datefield',
-            emptyText: '选择日期',
-        },
-        {
-            xtype: 'timefield',
-            emptyText: '选择时间',
-        }
-    ]
-
-})
 
 Ext.define('testcom', {
     xtype: 'testcom',

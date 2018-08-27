@@ -13,7 +13,7 @@ Ext.define('iotnsp.Application', {
         // TODO: add global / shared stores here
     ],
     models:[
-        'User'
+        'User','Product'
     ],
     defaultToken:"iotnsp",
     launch: function () {

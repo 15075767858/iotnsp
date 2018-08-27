@@ -19,4 +19,5 @@ exports.error=function(ResultInfo){
     return new ResultError(ResultInfo)
 }
 
+exports.ResultError=ResultError;
 exports.ResultInfo=ResultInfo;

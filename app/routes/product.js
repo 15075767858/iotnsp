@@ -6,10 +6,11 @@ const createError = require('http-errors');
 const ResultUtil = require("../util/ResultUtil")
 const UserService = require('../service/UserService')
 const ProductService = require('../service/ProductService')
+const TemplateController = require('../controller/TemplateController')
 
 
 router.all('/*', function (req, res, next) {
-    console.log(req)
+    //console.log(req)
     var token = req.cookies['api_token'];
     if (!token) {
         throw ResultUtil.error(ResultUtil.ResultInfo.NOT_LOGIN);
@@ -55,6 +56,26 @@ router.put('/', function (req, res, next) {
     var product = new Product(res.body);
     ProductService.productUpdate(product);
     res.send("put")
+})
+
+
+router.get('/:id/template', async function (req, res, next) {
+    console.log(req)
+
+    var template = await TemplateController.getTemplate(req.params.id);
+    res.send(ResultUtil.success(template))
+})
+router.post('/:id/template', async function (req, res, next) {
+    console.log(req)
+    req.params.id
+
+
+    res.send(ResultUtil.success(req.data))
+})
+
+router.put('/:id/template', async function (req, res, next) {
+    TemplateController
+    res.send('')
 })
 
 
