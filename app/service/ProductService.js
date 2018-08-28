@@ -11,21 +11,36 @@ async function productAdd(user, product) {
     //console.log(result)
     return await ProductDao.getProductByFiled('id', result.insertId)
 }
+
 exports.productAdd = productAdd;
 // productAdd({id: 23}, {name: "盐", identifier: "bbbb"}).then(function () {
 // console.log(arguments)
 // })
 
 async function productAll(user) {
-    return ProductDao.getProductByFiled('user_id',user.id)
+    return ProductDao.getProductByFiled('user_id', user.id)
 }
-exports.productAll = productAll;
-async function productUpdate(product){
 
-    ProductDao.updateProduct(product,'id',product.id);
-    return ProductDao.getProductByFiled('id',product.id);
+exports.productAll = productAll;
+
+async function productUpdate(product) {
+
+    ProductDao.updateProduct(product, 'id', product.id);
+    return ProductDao.getProductByFiled('id', product.id);
 }
+
 exports.productUpdate = productUpdate;
+
+async function getProductById(id) {
+    var products = await ProductDao.getProductByFiled('id', id);
+    if (products[0]) {
+        return products[0];
+    } else {
+        return null;
+    }
+}
+
+exports.getProductById = getProductById;
 // productAll({id:23}).then(function () {
 //     console.log(arguments)
 // })

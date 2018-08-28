@@ -28,6 +28,14 @@ router.get('/', async function (req, res, next) {
     res.send(ResultUtil.success(products))
 })
 
+router.get('/:id', async function (req, res, next) {
+    var user = await UserService.userInfo(new User(req.cookies))
+    //var products = await ProductService.productAll(user)
+    var product = await ProductService.getProductById(1);
+    product.templateId = 2
+    res.send(ResultUtil.success(product))
+})
+
 //获取
 // router.get('/:id', async function (req, res, next) {
 //     var user = await UserService.userInfo(new User(req.cookies))
@@ -61,14 +69,13 @@ router.put('/', function (req, res, next) {
 
 router.get('/:id/template', async function (req, res, next) {
     console.log(req)
-
     var template = await TemplateController.getTemplate(req.params.id);
+
     res.send(ResultUtil.success(template))
 })
 router.post('/:id/template', async function (req, res, next) {
     console.log(req)
     req.params.id
-
 
     res.send(ResultUtil.success(req.data))
 })

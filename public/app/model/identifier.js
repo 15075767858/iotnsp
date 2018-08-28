@@ -1,5 +1,5 @@
 Ext.define('iotnsp.model.identifier', {
-    extend: 'Ext.data.Model',
+    extend: 'iotnsp.model.Base',
 
     fields: [
         {name: 'id', type: 'string'},
@@ -7,6 +7,6 @@ Ext.define('iotnsp.model.identifier', {
         {name: 'name', type: 'string'},
         {name: 'create_time', type: 'date'},
         {name: 'corporationId', type: 'string'}
+    ],
 
-    ]
 });

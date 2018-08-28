@@ -18,21 +18,17 @@ Ext.define('iotnsp.view.main.MainController', {
         }
     },
     routes: {
-        //'#': 'onRouteChange1'
+        '#': 'onRouteChange'
     },
     onLogin: function (tb) {
         var viewModel = this.getViewModel();
-        console.log(viewModel)
-
+        a=this;
+        var user  = iotnsp.app.getLoginUser();
+        viewModel.setLinks({user:user})
     },
-
     isLogin: function () {
-
-
     },
     onRouteChange: function (id) {
-
-
         this.setCurrentView(id);
     },
     setCurrentView: function (hashTag) {

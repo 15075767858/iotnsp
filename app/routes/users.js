@@ -4,7 +4,7 @@ const User = require('../model/user').User
 const createError = require('http-errors');
 const ResultUtil = require("../util/ResultUtil")
 var UserService = require('../service/UserService')
-
+const ProductService = require('../service/ProductService')
 
 
 router.all('/*',function(req,res,next){
@@ -22,10 +22,12 @@ router.all('/*',function(req,res,next){
 // });
 
 
+
 //获取
 router.get('/:id',async function (req, res, next) {
     var user = await UserService.userInfo(new User(req.cookies))
-
+    var products =  await ProductService.productAll(user)
+    //user.products=products
     res.send(ResultUtil.success(user))
 })
 router.get('/',async function (req, res, next) {

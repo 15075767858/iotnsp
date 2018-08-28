@@ -6,7 +6,6 @@ Ext.define('iotnsp.view.productmanage.ProductList', {
         //'iotnsp.view.productmanage.ProductListModel',
         //'iotnsp.view.productmanage.ProductManage'
     ],
-    id: 'b',
 
     // controller: 'productmanage-productlist',
     // viewModel: {
@@ -24,6 +23,7 @@ Ext.define('iotnsp.view.productmanage.ProductList', {
     },
     listeners:{
         boxready:function () {
+            //alert
             new iotnsp.view.productmanage.TemplateEdit
         }
     },

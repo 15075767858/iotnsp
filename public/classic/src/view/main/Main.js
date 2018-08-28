@@ -16,7 +16,7 @@ Ext.define('iotnsp.view.main.Main', {
         'iotnsp.view.main.MainController',
         'iotnsp.view.main.MainModel',
         'iotnsp.view.main.List',
-
+        'Ext.list.Tree'
     ],
 
     controller: 'main',
@@ -46,12 +46,16 @@ Ext.define('iotnsp.view.main.Main', {
                 reference: "acount_logo",
                 height: 35,
                 width: 35,
-                src: "resources/test/qiye_logo.jpg"
+                bind:{
+                    src:'{user.logo}'
+                }
             },
             {
                 reference: "acount",
                 xtype: "component",
-                html: "niot_logoccyy2017@qq.com"
+                bind: {
+                    html: "{user.email}"
+                }
             },
             {
                 iconCls: 'x-fa fa-envelope',
@@ -106,7 +110,7 @@ Ext.define('iotnsp.view.main.Main', {
                     navigationBar: false,
                     reference: 'mainCardPanel',
                     items: [{
-                         xtype: "iotnsp"
+                        xtype: "iotnsp"
                     },]
                 }
             ]

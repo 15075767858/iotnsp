@@ -9,7 +9,6 @@ Ext.define('iotnsp.view.productmanage.ProductManage',{
     viewModel: {
         type: 'productmanage-productmanage'
     },
-    id:'a',
     xtype: "productmanage",
     //height: 300,
     layout: "responsivecolumn",

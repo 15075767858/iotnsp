@@ -1,8 +1,6 @@
 Ext.define('iotnsp.model.User', {
-    extend: 'Ext.data.Model',
-    schema: {
-        namespace: 'iotnsp.model',
-    },
+    extend: 'iotnsp.model.Base',
+
     fields: [
         {name: 'id', type: 'int'},
         {name: 'email', type: 'string'},
@@ -16,19 +14,13 @@ Ext.define('iotnsp.model.User', {
         {name: 'license_code', type: 'string'},
         {name: 'license_url', type: 'string'},
         {name: 'logo', type: 'string'},
-        {name: 'token', type: 'string'}
+        {name: 'token', type: 'string'},
     ],
+    hasMany: 'Product',
 //    idProperty:"email",
-
-    data:{
-
-    },
+    data: {},
     proxy: {
-        reader:{
-            type:'json',
-            rootProperty:'data'
-        },
-        type: "rest",
+        type:'api',
         url: "/v1/users"
         //url:'app/data/corporation'
     }

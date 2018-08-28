@@ -1,9 +1,8 @@
 Ext.define('iotnsp.view.iotnsp.iotnspController', {
-    //extend: 'Ext.app.ViewController',
-    extend:'iotnsp.main.NavigationController',
+    extend: 'Ext.app.ViewController',
     alias: 'controller.iotnsp-iotnsp',
 
     boxready:function(){
-        this.isLogin()
+        //this.isLogin()
     }
 });

@@ -48,7 +48,8 @@ Ext.define('iotnsp.view.authentication.AuthDialogController', {
                     console.log(arguments)
                     Ext.Msg.alert('登录成功 ', action.result.message);
                     setTimeout(function () {
-                        __this.redirectTo('iotnsp')
+                        location.reload()
+                        //__this.redirectTo('iotnsp')
                     }, 3000)
                 },
                 failure: function (form, action) {

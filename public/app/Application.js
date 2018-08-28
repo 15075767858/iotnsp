@@ -12,14 +12,38 @@ Ext.define('iotnsp.Application', {
         'Industry',
         // TODO: add global / shared stores here
     ],
-    models:[
-        'User','Product'
+    models: [
+        'User', 'Product', 'Template'
     ],
-    defaultToken:"iotnsp",
+    //defaultToken: "iotnsp",
+    config: {
+        loginUser: null
+    },
     launch: function () {
+        var me = this;
+        if (Ext.util.Cookies.get('api_token')) {
+            var userModel =  this.getModel('User')
+            var user = new userModel;
+            user.setId(Ext.util.Cookies.get('id'))
+            user.load({
+                success:function () {
+                    iotnsp.app.setLoginUser(user)
+                    me.setMainView('iotnsp.view.main.Main')
+                    me.redirectTo(Ext.util.History.hash)
+                },
+                failure:function () {
+                    Ext.create('iotnsp.view.authentication.Login')
+                }
+            })
+        } else {
+            Ext.create('iotnsp.view.authentication.Login')
+
+            //this.redirectTo('login')
+        }
+
         // TODO - Launch the application
     },
-    
+
     onAppUpdate: function () {
         Ext.Msg.confirm('Application Update', 'This application has an update, reload?',
             function (choice) {
