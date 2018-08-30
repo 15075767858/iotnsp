@@ -3,6 +3,7 @@ const router = express.Router();
 const User = require('../model/user').User
 const createError = require('http-errors');
 const ResultUtil = require("../util/ResultUtil")
+const TemplateController = require('../controller/TemplateController');
 var UserService = require('../service/UserService')
 
 
@@ -16,17 +17,18 @@ router.all('/*',function(req,res,next){
     next()
 })
 /* GET users listing. */
-// router.get('/', async function (req, res, next) {
-//
-//     res.send(users);
-// });
+router.get('/', async function (req, res, next) {
+
+
+    res.send(users);
+});
 
 
 //获取
 router.get('/:id',async function (req, res, next) {
-    var user = await UserService.userInfo(new User(req.cookies))
-
-    res.send(ResultUtil.success(user))
+    //var user = await UserService.userInfo(new User(req.cookies));
+    //TemplateController.getTemplate(res.params.id)
+    res.send(ResultUtil.success({id:'123',data:'ad',productId:"123",'user_id':24}));
 })
 // router.get('/',async function (req, res, next) {
 //     var user = await UserService.userInfo(new User(req.cookies))
@@ -35,6 +37,7 @@ router.get('/:id',async function (req, res, next) {
 // })
 //修改
 router.post('/', function (req, res, next) {
+    TemplateController.saveTemplate()
     //console.log(req)
     //console.log(req.body())
     res.send("post")

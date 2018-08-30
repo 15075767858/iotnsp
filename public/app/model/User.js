@@ -2,7 +2,7 @@ Ext.define('iotnsp.model.User', {
     extend: 'iotnsp.model.Base',
 
     fields: [
-        {name: 'id', type: 'int'},
+        {name: 'id', type: 'string'},
         {name: 'email', type: 'string'},
         {name: 'password', type: 'string'},
         {name: 'phone', type: 'string'},
@@ -16,7 +16,7 @@ Ext.define('iotnsp.model.User', {
         {name: 'logo', type: 'string'},
         {name: 'token', type: 'string'},
     ],
-    hasMany: 'Product',
+    hasMany: ['Product'],
 //    idProperty:"email",
     data: {},
     proxy: {

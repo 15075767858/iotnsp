@@ -7,6 +7,7 @@ const ResultUtil = require("../util/ResultUtil")
 const UserService = require('../service/UserService')
 const ProductService = require('../service/ProductService')
 const TemplateController = require('../controller/TemplateController')
+const ProductController = require('../controller/ProductController')
 
 
 router.all('/*', function (req, res, next) {
@@ -23,17 +24,18 @@ router.all('/*', function (req, res, next) {
 //     res.send(users);
 // });
 router.get('/', async function (req, res, next) {
-    var user = await UserService.userInfo(new User(req.cookies))
-    var products = await ProductService.productAll(user)
-    res.send(ResultUtil.success(products))
+
+    await ProductController.getProducts(req, res, next)
 })
 
 router.get('/:id', async function (req, res, next) {
-    var user = await UserService.userInfo(new User(req.cookies))
+    console.log(req)
+    //var user = await UserService.userInfo(new User(req.cookies))
     //var products = await ProductService.productAll(user)
-    var product = await ProductService.getProductById(1);
-    product.templateId = 2
-    res.send(ResultUtil.success(product))
+    ProductController.getProductById(req, res, next);
+    //var product = await ProductService.getProductById(req.params.id);
+    //product.template_id = "2"
+    //res.send(ResultUtil.success(product))
 })
 
 //获取

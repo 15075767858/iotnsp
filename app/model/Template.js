@@ -8,7 +8,9 @@ class Template {
         console.log(obj)
         this.id = null;
         this.data = null;
-        this.productId = null;
+        this.product_id = null;
+        this.user_id = null;
+        this.name = null;
         for (var pro in obj) {
             this[pro] = obj[pro]
         }
@@ -38,7 +40,7 @@ class Template {
 
 
 //exports.Template = Template;
-module.exports=Template
+module.exports = Template
 //
 // var t = new Template({
 //     id:1,

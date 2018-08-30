@@ -81,7 +81,6 @@ Ext.define('iotnsp.view.productmanage.TemplateEditController', {
         var refs = this.view.getReferences();
         refs['modulegridcontainer'].add(Ext.widget('modulegrid'))
     },
-
     uploadFormCommit: function (form, success) {
         form.submit({
             waitMsg: '图片上传中...',
@@ -100,7 +99,6 @@ Ext.define('iotnsp.view.productmanage.TemplateEditController', {
     },
     uploadImg: function (img) {
         var viewModel = this.getViewModel()
-
         this.uploadFormCommit(img.up('form'), function (form, action) {
             console.log(arguments)
             viewModel.set('modelgrid.selection.field_value', action.result.data);

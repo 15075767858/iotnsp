@@ -1,8 +1,17 @@
 var UserDao = require('../dao/UserDao');
 var ProductDao = require('../dao/ProductDao');
 var HecnniotService = require('./HecnniotService');
+const Product = require('../model/Product');
 const ResultUtil = require("../util/ResultUtil")
 const error = ResultUtil.error;
+
+
+var getProductByUser = async function (user) {
+    return await ProductDao.getProductByFiled('user_id', user.id);
+}
+
+
+exports.getProductByUser = getProductByUser;
 
 // id  name identifier  create_time  userId
 async function productAdd(user, product) {
@@ -32,9 +41,9 @@ async function productUpdate(product) {
 exports.productUpdate = productUpdate;
 
 async function getProductById(id) {
-    var products = await ProductDao.getProductByFiled('id', id);
-    if (products[0]) {
-        return products[0];
+    var results = await ProductDao.getProductByFiled('id', id);
+    if (results[0]) {
+        return new Product(results[0]);
     } else {
         return null;
     }

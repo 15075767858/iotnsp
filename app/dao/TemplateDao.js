@@ -1,4 +1,5 @@
 const DBUtil = require('../util/DBUtil');
+
 const pool = DBUtil.pool;
 
 function getTemplateByFiled(field, value) {

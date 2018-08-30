@@ -22,6 +22,7 @@ function doGet(url) {
 
 function userLogin(user) {
     var url = HecnniotUrl.apiLogin + `?email=${user.email}&password=${user.password}`
+    console.log(url)
     return doGet(url)
 }
 

@@ -29,3 +29,4 @@ exports.NOT_LOGIN = {code: 10000, message: "未登录", status: 400};
 
 exports.UPLOAD_ERROR = {code: 10005, message: "上传图片失败", status: 500};
 exports.TEMPLATE_EXIST_ERR = {code: 10006, message: "模版不存在", status: 404}
+exports.PRODUCT_FILTER_ERR = {code: 10007, message: "查询参数有误", status: 404}

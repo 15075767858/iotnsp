@@ -21,10 +21,11 @@ Ext.define('iotnsp.view.main.MainController', {
         '#': 'onRouteChange'
     },
     onLogin: function (tb) {
-        var viewModel = this.getViewModel();
-        a=this;
-        var user  = iotnsp.app.getLoginUser();
-        viewModel.setLinks({user:user})
+        //var viewModel = this.getViewModel();
+        //var user  = iotnsp.app.getLoginUser();
+        //viewModel.setLinks({user:user})
+        var hash = Ext.util.History.hash;
+        this.setCurrentView(hash)
     },
     isLogin: function () {
     },
@@ -32,7 +33,6 @@ Ext.define('iotnsp.view.main.MainController', {
         this.setCurrentView(id);
     },
     setCurrentView: function (hashTag) {
-
         hashTag = (hashTag || '').toLowerCase();
         var me = this,
             refs = me.getReferences(),

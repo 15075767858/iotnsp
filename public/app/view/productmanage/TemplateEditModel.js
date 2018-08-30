@@ -3,24 +3,28 @@ Ext.define('iotnsp.view.productmanage.TemplateEditModel', {
     alias: 'viewmodel.productmanage-templateedit',
     data: {
         name: 'iotnsp',
-        editDisplay:'',
+        editDisplay: '',
         template: {
             pageTitle: 'a',
-            nav1_name:'b',
-            nav1_value:'c',
-            nav2_name:'d',
-            nav2_value:'e',
-            nav3_name:'f',
-            nav3_value:'g',
+            nav1_name: 'b',
+            nav1_value: 'c',
+            nav2_name: 'd',
+            nav2_value: 'e',
+            nav3_name: 'f',
+            nav3_value: 'g',
         },
     },
-    links:{
-      product:{
-          type:'Product',
-          create:{
-              id:2
-          }
-      }
+    links: {
+        template: {
+            type: 'Template',
+            create: true
+        },
+        product: {
+            type: 'Product',
+            create: {
+                id: 2
+            }
+        }
     },
     formulas: {
 

@@ -17,21 +17,23 @@ Ext.define('iotnsp.Application', {
     ],
     //defaultToken: "iotnsp",
     config: {
-        loginUser: null
+        //loginUser: null,
     },
     launch: function () {
         var me = this;
         if (Ext.util.Cookies.get('api_token')) {
-            var userModel =  this.getModel('User')
+            var userModel = this.getModel('User')
             var user = new userModel;
             user.setId(Ext.util.Cookies.get('id'))
             user.load({
-                success:function () {
-                    iotnsp.app.setLoginUser(user)
+                success: function () {
+                    //iotnsp.app.setLoginUser(user)
                     me.setMainView('iotnsp.view.main.Main')
-                    me.redirectTo(Ext.util.History.hash)
+                    me.getMainView().getViewModel().setLinks({
+                        loginUser:user
+                    })
                 },
-                failure:function () {
+                failure: function () {
                     Ext.create('iotnsp.view.authentication.Login')
                 }
             })

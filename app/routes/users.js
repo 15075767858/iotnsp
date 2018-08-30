@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../model/user').User
+const User = require('../model/User')
 const createError = require('http-errors');
 const ResultUtil = require("../util/ResultUtil")
 var UserService = require('../service/UserService')

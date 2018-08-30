@@ -24,7 +24,6 @@ function updateUser(user) {
     return DBUtil.updateDataByField('users', user, 'email', user.email);
 }
 
-
 function getUsers() {
     return new Promise((resolve, reject) => {
         pool.getConnection((err, connection) => {

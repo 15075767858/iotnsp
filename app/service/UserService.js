@@ -55,13 +55,15 @@ async function userInfo(user) {
 
 
 async function userLogin(user) {
-    var result = await HecnniotService.userLogin(user);
-    try {
-        result = JSON.parse(result)
-    } catch (e) {
-        //console.log(result,e)
-        throw new ResultError(ResultInfo.REMOVE_SERVER_RESULT_ERROR);
-    }
+    var result = {"error_code":0,"data":{"Info":"\u767b\u5f55\u6210\u529f","Id":103,"UserName":"282137@qwe.com","api_token":"laV0kJfK3RffyuIEnmUwAcFxVp4v50iJTZ4xezA84T3RQhIzkHIQ6ztrLHxF"}}
+
+    // var result = await HecnniotService.userLogin(user);
+    // try {
+    //     result = JSON.parse(result)
+    //
+    // } catch (e) {
+    //     throw new ResultError(ResultInfo.REMOVE_SERVER_RESULT_ERROR);
+    // }
     var errorCode = result["error_code"];
     switch (errorCode) {
         case 0:
