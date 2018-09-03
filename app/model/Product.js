@@ -9,13 +9,10 @@ class Product {
         this.identifier = null;
         this.name = null;
         this.template_id = null;
-        for (var pro in obj) {
-            this[pro] = obj[pro]
-        }
+        Object.assign(this,obj)
         Object.preventExtensions(this)
     }
 
 }
 
 module.exports=Product;
-

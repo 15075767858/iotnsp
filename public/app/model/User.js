@@ -16,11 +16,18 @@ Ext.define('iotnsp.model.User', {
         {name: 'logo', type: 'string'},
         {name: 'token', type: 'string'},
     ],
-    hasMany: ['Product'],
+    hasMany: ['Product',
+        {
+            type:'Template',
+            storeConfig: {
+                type: 'templates'
+            },
+        }
+    ],
 //    idProperty:"email",
-    data: {},
+
     proxy: {
-        type:'api',
+        type: 'api',
         url: "/v1/users"
         //url:'app/data/corporation'
     }

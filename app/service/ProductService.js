@@ -5,6 +5,7 @@ const Product = require('../model/Product');
 const ResultUtil = require("../util/ResultUtil")
 const error = ResultUtil.error;
 
+var productDao = new ProductDao()
 
 var getProductByUser = async function (user) {
     return await ProductDao.getProductByFiled('user_id', user.id);
@@ -16,9 +17,9 @@ exports.getProductByUser = getProductByUser;
 // id  name identifier  create_time  userId
 async function productAdd(user, product) {
     product.user_id = user.id;
-    var result = await ProductDao.saveProduct(product);
+    var result = await productDao.save(product);
     //console.log(result)
-    return await ProductDao.getProductByFiled('id', result.insertId)
+    return await productDao.getOneById(result.insertId)
 }
 
 exports.productAdd = productAdd;
@@ -27,15 +28,14 @@ exports.productAdd = productAdd;
 // })
 
 async function productAll(user) {
-    return ProductDao.getProductByFiled('user_id', user.id)
+    return await productDao.getManyByProperty('user_id', user.id)
 }
 
 exports.productAll = productAll;
 
 async function productUpdate(product) {
-
-    ProductDao.updateProduct(product, 'id', product.id);
-    return ProductDao.getProductByFiled('id', product.id);
+    await productDao.updateByDataId(product);
+    return productDao.getOneById(product.id);
 }
 
 exports.productUpdate = productUpdate;

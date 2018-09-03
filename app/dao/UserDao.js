@@ -1,8 +1,23 @@
+const DaoBase = require('./DaoBase');
 const DBUtil = require('../util/DBUtil');
 const pool = DBUtil.pool;
 
 //var pool = require('../util/DBUtil').pool;
 
+
+class UserDao extends DaoBase {
+    constructor() {
+        super('user');
+    }
+
+    async getUserByEmail(email) {
+        return super.getOneByProperty('email', email);
+    }
+
+
+}
+
+module.exports=UserDao;
 
 function getUserByEmail(email) {
     return getUserByFiled('email', email);
@@ -53,9 +68,9 @@ function deleteUser(user) {
 // }).then(function () {
 //     console.log(arguments)
 // })
-exports.getUserByField = getUserByFiled;
-exports.updateUser = updateUser;
-exports.deleteUser = deleteUser;
-exports.saveUser = saveUser;
-exports.getUserByEmail = getUserByEmail;
-exports.getUsers = getUsers;
+// exports.getUserByField = getUserByFiled;
+// exports.updateUser = updateUser;
+// exports.deleteUser = deleteUser;
+// exports.saveUser = saveUser;
+// exports.getUserByEmail = getUserByEmail;
+// exports.getUsers = getUsers;

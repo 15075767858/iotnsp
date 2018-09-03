@@ -7,11 +7,10 @@ const TemplateController = require('../controller/TemplateController');
 var UserService = require('../service/UserService')
 
 
-
-router.all('/*',function(req,res,next){
-    console.log(req)
+router.all('/*', function (req, res, next) {
+    //console.log(req)
     var token = req.cookies['api_token'];
-    if(!token){
+    if (!token) {
         throw ResultUtil.error(ResultUtil.ResultInfo.NOT_LOGIN);
     }
     next()
@@ -20,15 +19,16 @@ router.all('/*',function(req,res,next){
 router.get('/', async function (req, res, next) {
 
 
-    res.send(users);
+
+    await TemplateController.getTemplates(req, res, next)
 });
 
 
 //获取
-router.get('/:id',async function (req, res, next) {
+router.get('/:id', async function (req, res, next) {
     //var user = await UserService.userInfo(new User(req.cookies));
     //TemplateController.getTemplate(res.params.id)
-    res.send(ResultUtil.success({id:'123',data:'ad',productId:"123",'user_id':24}));
+    res.send(ResultUtil.success({id: '123', data: 'ad', productId: "123", 'user_id': 24}));
 })
 // router.get('/',async function (req, res, next) {
 //     var user = await UserService.userInfo(new User(req.cookies))

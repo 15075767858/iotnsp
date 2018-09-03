@@ -3,6 +3,12 @@ Ext.define('iotnsp.view.productmanage.ProductAddModel', {
     alias: 'viewmodel.productmanage-productadd',
     data: {
         name: 'iotnsp'
+    },
+    links: {
+        product: {
+            type: "Product",
+            create: true
+        }
     }
 
 });

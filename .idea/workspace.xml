@@ -2,47 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5b213bc-ba56-4fa9-b052-2fd05dacc358" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controller/ProductController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/model/QueryOption.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/dao/DaoBase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/app/store/Templates.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/ec3e203c-d128-4631-b562-d21ea2c40187.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ec3e203c-d128-4631-b562-d21ea2c40187.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/ResultInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/ResultInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/ProductController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/ProductController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controller/TemplateController.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/controller/TemplateController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dao/ProductDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/ProductDao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dao/TemplateDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/TemplateDao.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/dao/UserDao.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/dao/UserDao.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/db.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/model/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/Product.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/Template.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/Template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/model/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/model/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/auth.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/routes/templates.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/templates.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/routes/users.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/routes/users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service/HecnniotService.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/HecnniotService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/service/ProductService.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/ProductService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/service/TemplateService.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/TemplateService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/service/UserService.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/service/UserService.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/util/DBUtil.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/DBUtil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/app/Application.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/Application.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/model/Product.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/model/Product.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/app/model/Template.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/model/Template.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/app/model/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/model/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/view/main/MainController.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/main/MainController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/view/main/MainModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/main/MainModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/view/productmanage/ProductManageController.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/productmanage/ProductManageController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/view/productmanage/ProductManageModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/productmanage/ProductManageModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/view/productmanage/TemplateEditController.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/productmanage/TemplateEditController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/app/view/productmanage/TemplateEditModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/productmanage/TemplateEditModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/development/iotnsp/classic.watch.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/temp/development/iotnsp/slicer-temp/bootstrap.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/temp/development/iotnsp/slicer-temp/bootstrap.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/build/temp/development/iotnsp/slicer-temp/bootstrap.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/public/build/temp/development/iotnsp/slicer-temp/bootstrap.jsonp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/classic.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/classic.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/classic.jsonp" beforeDir="false" afterPath="$PROJECT_DIR$/public/classic.jsonp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/view/productmanage/ProductAddController.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/productmanage/ProductAddController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/app/view/productmanage/ProductAddModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/app/view/productmanage/ProductAddModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductAdd.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductList.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/ext/build/ext-all-rtl-debug.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/ext/build/ext-all-rtl-debug.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/node_modules/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -80,41 +62,43 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="iotnsp: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="iotnsp: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="templates: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductController.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/ProductController.js">
+      <file leaf-file-name="UserDao.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dao/UserDao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="600">
+              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="templates.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/routes/templates.js">
+      <file leaf-file-name="UserService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/service/UserService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="292">
+              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TemplateService.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/service/TemplateService.js">
+      <file leaf-file-name="DaoBase.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/dao/DaoBase.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="605">
-              <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+            <state relative-caret-position="413">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProductDao.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/dao/ProductDao.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -122,48 +106,44 @@
       <file leaf-file-name="TemplateDao.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/dao/TemplateDao.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            <state relative-caret-position="186">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBUtil.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ProductController.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controller/ProductController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="templates.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/routes/templates.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBUtil.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/util/DBUtil.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="263">
-              <caret line="126" column="94" selection-start-line="126" selection-start-column="94" selection-end-line="126" selection-end-column="94" />
-              <folding>
-                <element signature="n#!!block;n#getData1#0" />
-                <element signature="e#3549#4196#0" />
-              </folding>
+            <state relative-caret-position="288">
+              <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryOption.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/QueryOption.js">
+      <file leaf-file-name="ProductService.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/service/ProductService.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="15" selection-start-line="13" selection-start-column="12" selection-end-line="13" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/model/Product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="14" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="templates" pinned="false" current-in-tab="false">
-        <entry file="das://ec3e203c-d128-4631-b562-d21ea2c40187/schema/iotnsp/table/templates">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="262">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -181,21 +161,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ext-trial</find>
-      <find>baidu.com</find>
-      <find>{entityName</find>
-      <find>prefix</find>
-      <find>entityType</find>
-      <find>proxy</find>
-      <find>entityName</find>
-      <find>urlPrefix</find>
-      <find>getProxy</find>
-      <find>constructProxy</find>
-      <find>Ext.create(&quot;iotnsp.view.productmanage.TemplateEdit&quot;)</find>
-      <find>productmanage</find>
-      <find>templateedit</find>
-      <find>view.productmanage.TemplateEdit</find>
-      <find>onAddProduct</find>
       <find>treelist-ui</find>
       <find>user_id</find>
       <find>session</find>
@@ -211,6 +176,21 @@
       <find>id</find>
       <find>viewModel</find>
       <find>r: ER_NO_SUCH_TABLE: Table 'iotnsp.template' doesn'</find>
+      <find>function</find>
+      <find>commit</find>
+      <find>updateTemplate</find>
+      <find>addHasMany</find>
+      <find>pending</find>
+      <find>initAssociations</find>
+      <find>getAssociatedStore</find>
+      <find>console.log</find>
+      <find>templates</find>
+      <find>Template</find>
+      <find>update</find>
+      <find>aaa</find>
+      <find>console.log(</find>
+      <find>connection</find>
+      <find>connenction</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/app/model</dir>
@@ -218,6 +198,7 @@
       <dir>$PROJECT_DIR$/public/app</dir>
       <dir>$PROJECT_DIR$/public/classic</dir>
       <dir>$PROJECT_DIR$/public</dir>
+      <dir>$PROJECT_DIR$/node_modules/mysql</dir>
       <dir>$PROJECT_DIR$/public/ext</dir>
     </dirStrings>
   </component>
@@ -227,17 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/classic/src/view/productmanage/TemplateEdit.js" />
-        <option value="$PROJECT_DIR$/app/util/ResultUtil.js" />
-        <option value="$PROJECT_DIR$/app/controller/TemplateController.js" />
-        <option value="$PROJECT_DIR$/public/ext/classic/theme-base/sass/etc/all.scss" />
-        <option value="$PROJECT_DIR$/public/ext/modern/theme-base/sass/etc/all.scss" />
-        <option value="$PROJECT_DIR$/public/app/util/LoginUtil.js" />
-        <option value="$PROJECT_DIR$/public/app/view/authentication/AuthDialogController.js" />
-        <option value="$PROJECT_DIR$/public/ext/packages/core/src/data/schema/Schema.js" />
-        <option value="$PROJECT_DIR$/public/app/model/Base.js" />
-        <option value="$PROJECT_DIR$/public/app/model/identifier.js" />
-        <option value="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductManage.js" />
         <option value="$PROJECT_DIR$/public/app/view/main/NavigationController.js" />
         <option value="$PROJECT_DIR$/public/modern/src/view/main/Main.js" />
         <option value="$PROJECT_DIR$/public/app/view/iotnsp/iotnspController.js" />
@@ -246,11 +216,8 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/public/app/view/productmanage/TemplateEditController.js" />
         <option value="$PROJECT_DIR$/public/app/view/productmanage/TemplateEditModel.js" />
-        <option value="$PROJECT_DIR$/public/app/model/User.js" />
         <option value="$PROJECT_DIR$/app/config/ResultInfo.js" />
-        <option value="$PROJECT_DIR$/app/dao/UserDao.js" />
         <option value="$PROJECT_DIR$/app/service/HecnniotService.js" />
-        <option value="$PROJECT_DIR$/app/service/UserService.js" />
         <option value="$PROJECT_DIR$/app/routes/auth.js" />
         <option value="$PROJECT_DIR$/app/app.js" />
         <option value="$PROJECT_DIR$/app/model/user.js" />
@@ -259,25 +226,39 @@
         <option value="$PROJECT_DIR$/public/app/store/Products.js" />
         <option value="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductList.js" />
         <option value="$PROJECT_DIR$/public/app/model/Product.js" />
-        <option value="$PROJECT_DIR$/public/app/model/Template.js" />
         <option value="$PROJECT_DIR$/public/app/view/productmanage/ProductManageModel.js" />
         <option value="$PROJECT_DIR$/public/app/view/main/MainController.js" />
         <option value="$PROJECT_DIR$/public/app/view/main/MainModel.js" />
-        <option value="$PROJECT_DIR$/public/app/Application.js" />
         <option value="$PROJECT_DIR$/public/app/view/productmanage/ProductManageController.js" />
-        <option value="$PROJECT_DIR$/app/service/ProductService.js" />
-        <option value="$PROJECT_DIR$/app/controller/ProductController.js" />
-        <option value="$PROJECT_DIR$/app/routes/product.js" />
-        <option value="$PROJECT_DIR$/app/model/Product.js" />
-        <option value="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductAdd.js" />
-        <option value="$PROJECT_DIR$/app/routes/templates.js" />
         <option value="$PROJECT_DIR$/app/model/Template.js" />
-        <option value="$PROJECT_DIR$/app/dao/TemplateDao.js" />
         <option value="$PROJECT_DIR$/app/routes/index.js" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ec3e203c-d128-4631-b562-d21ea2c40187/console.sql" />
         <option value="$PROJECT_DIR$/app/model/QueryOption.js" />
+        <option value="$PROJECT_DIR$/public/app/Application.js" />
+        <option value="$PROJECT_DIR$/public/app/store/templates.js" />
+        <option value="$PROJECT_DIR$/public/ext/packages/core/src/data/Model.js" />
+        <option value="$PROJECT_DIR$/public/app/model/Template.js" />
+        <option value="$PROJECT_DIR$/public/app/store/Templates.js" />
+        <option value="$PROJECT_DIR$/public/app/model/User.js" />
+        <option value="$PROJECT_DIR$/public/ext/build/ext-all-rtl-debug.js" />
+        <option value="$PROJECT_DIR$/public/app/view/productmanage/ProductAddModel.js" />
+        <option value="$PROJECT_DIR$/app/controller/TemplateController.js" />
+        <option value="$PROJECT_DIR$/public/classic/src/view/productmanage/ProductAdd.js" />
+        <option value="$PROJECT_DIR$/public/app/view/productmanage/ProductAddController.js" />
+        <option value="$PROJECT_DIR$/app/routes/product.js" />
         <option value="$PROJECT_DIR$/app/service/TemplateService.js" />
+        <option value="$PROJECT_DIR$/app/model/Product.js" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/ec3e203c-d128-4631-b562-d21ea2c40187/console.sql" />
+        <option value="$PROJECT_DIR$/app/routes/templates.js" />
         <option value="$PROJECT_DIR$/app/util/DBUtil.js" />
+        <option value="$PROJECT_DIR$/app/dao/Dao.js" />
+        <option value="$PROJECT_DIR$/app/dao/UserDao.js" />
+        <option value="$PROJECT_DIR$/app/dao/TemplateDao.js" />
+        <option value="$PROJECT_DIR$/app/util/ResultUtil.js" />
+        <option value="$PROJECT_DIR$/app/service/UserService.js" />
+        <option value="$PROJECT_DIR$/app/controller/ProductController.js" />
+        <option value="$PROJECT_DIR$/app/dao/DaoBase.js" />
+        <option value="$PROJECT_DIR$/app/service/ProductService.js" />
+        <option value="$PROJECT_DIR$/app/dao/ProductDao.js" />
       </list>
     </option>
   </component>
@@ -352,9 +333,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1080" />
-    <option name="y" value="-606" />
+    <option name="y" value="-564" />
     <option name="width" value="1080" />
-    <option name="height" value="1446" />
+    <option name="height" value="1404" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -390,34 +371,11 @@
               <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
               <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -447,7 +405,7 @@
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="productmanage" type="462c0819:PsiDirectoryNode" />
+              <item name="produce" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
@@ -477,32 +435,14 @@
               <item name="classic" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="classic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="productmanage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iotnsp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iotnsp" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="classic" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="window" type="462c0819:PsiDirectoryNode" />
+              <item name="authentication" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -544,7 +484,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Node.js.TemplateService.js">
+  <component name="RunManager" selected="Node.js.bin/www">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -565,10 +505,10 @@
       <patterns />
     </configuration>
     <configuration name="DBUtil.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="DBUtil.js" working-dir="$PROJECT_DIR$/app/util" />
+    <configuration name="DaoBase.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app/dao/DaoBase.js" working-dir="$PROJECT_DIR$/app/dao" />
+    <configuration name="ProductDao.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="ProductDao.js" working-dir="$PROJECT_DIR$/app/dao" />
     <configuration name="Product.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="Product.js" working-dir="$PROJECT_DIR$/app/model" />
     <configuration name="TemplateDao.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="TemplateDao.js" working-dir="$PROJECT_DIR$/app/dao" />
-    <configuration name="TemplateService.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="TemplateService.js" working-dir="$PROJECT_DIR$/app/service" />
-    <configuration name="Template.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="Template.js" working-dir="$PROJECT_DIR$/app/model" />
     <configuration name="db1.js" type="NodeJSConfigurationType" factoryName="Node.js" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app/db1.js" working-dir="$PROJECT_DIR$/app" />
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -595,18 +535,18 @@
     <list>
       <item itemvalue="Node.js.bin/www" />
       <item itemvalue="Node.js.db1.js" />
-      <item itemvalue="Node.js.TemplateService.js" />
       <item itemvalue="Node.js.Product.js" />
       <item itemvalue="Node.js.DBUtil.js" />
-      <item itemvalue="Node.js.Template.js" />
       <item itemvalue="Node.js.TemplateDao.js" />
+      <item itemvalue="Node.js.ProductDao.js" />
+      <item itemvalue="Node.js.DaoBase.js" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Node.js.TemplateService.js" />
-        <item itemvalue="Node.js.DBUtil.js" />
+        <item itemvalue="Node.js.DaoBase.js" />
+        <item itemvalue="Node.js.ProductDao.js" />
         <item itemvalue="Node.js.TemplateDao.js" />
-        <item itemvalue="Node.js.Template.js" />
+        <item itemvalue="Node.js.DBUtil.js" />
         <item itemvalue="Node.js.Product.js" />
       </list>
     </recent_temporary>
@@ -649,15 +589,21 @@
       <workItem from="1535341465550" duration="23912000" />
       <workItem from="1535439135998" duration="9453000" />
       <workItem from="1535504445502" duration="27681000" />
-      <workItem from="1535599899885" duration="17624000" />
+      <workItem from="1535599899885" duration="24810000" />
+      <workItem from="1535667730443" duration="4396000" />
+      <workItem from="1535677459816" duration="14189000" />
+      <workItem from="1535759844991" duration="145000" />
+      <workItem from="1535797410888" duration="541000" />
+      <workItem from="1535845603164" duration="610000" />
+      <workItem from="1535953426388" duration="7486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="324273000" />
+    <option name="totallyTimeSpent" value="358826000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1080" y="-606" width="1080" height="1446" extended-state="0" />
+    <frame x="-1080" y="-564" width="1080" height="1404" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -668,14 +614,13 @@
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5019268" side_tool="true" weight="0.15722223" />
       <window_info anchor="right" id="Maven Projects" order="5" sideWeight="0.49923077" weight="0.32851636" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" sideWeight="0.49807322" visible="true" weight="0.21423276" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49807322" visible="true" weight="0.22111706" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.3298153" />
       <window_info id="npm" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.42624167" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4261111" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="bottom" id="Database Console" order="12" weight="0.3283914" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16955684" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31117535" />
       <window_info anchor="right" id="Database" order="6" sideWeight="0.49846154" weight="0.2601156" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" sideWeight="0.49846154" weight="0.2495183" />
@@ -685,12 +630,13 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Console" order="12" weight="0.32833335" />
       <window_info anchor="bottom" id="SQL Generator" order="0" sideWeight="0.4990366" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="right" x="0" y="0" width="220" height="1697" id="Documentation" order="9" sideWeight="0.50076926" side_tool="true" weight="0.32851636" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32943603" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3288889" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -708,19 +654,13 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/app/model/Template.js</url>
-          <line>51</line>
-          <option name="timeStamp" value="19" />
+          <url>file://$PROJECT_DIR$/app/service/TemplateService.js</url>
+          <line>22</line>
+          <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="20" />
+      <option name="time" value="23" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="NodeJSConfigurationType">
-        <watch expression="t.constructor" language="JavaScript" />
-        <watch expression="t.__proto__" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -781,251 +721,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/uuid/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="22" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Error/ResultError.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/ResultInfo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/db1.js" />
-    <entry file="file://$PROJECT_DIR$/app/service/HecnniotService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/service/UserService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/util/ResultUtil.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/users.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/store/Products.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/productmanage/ProductListModel.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/productmanage/ProductListController.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/Template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" lean-forward="true" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/productmanage/ProductManageModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/window/FullScreenWindowModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/classic/src/view/window/FullScreenWindow.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/classic/src/view/main/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/main/MainModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/Application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="18" lean-forward="true" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/main/MainController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="10" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/view/productmanage/ProductManageController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/nodejs/library/node-globals-stub.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="51" column="4" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/service/ProductService.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/classic/src/view/productmanage/ProductList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/app/model/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/classic/src/view/productmanage/ProductAdd.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/classic/src/view/productmanage/TemplateEdit.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Template.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="25" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/sequences/Sequence.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mysql/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/Connection.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="193" column="11" selection-start-line="193" selection-start-column="6" selection-end-line="193" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://ec3e203c-d128-4631-b562-d21ea2c40187/schema/iotnsp/table/products">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1036,59 +735,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ec3e203c-d128-4631-b562-d21ea2c40187/console.sql">
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/constants/server_status.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/Connection.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="64" lean-forward="true" selection-start-column="64" selection-end-column="64" />
+        <state relative-caret-position="603">
+          <caret line="149" column="36" lean-forward="true" selection-start-line="149" selection-start-column="36" selection-end-line="149" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="das://ec3e203c-d128-4631-b562-d21ea2c40187/schema/iotnsp/table/templates">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="44" column="69" selection-start-line="44" selection-start-column="69" selection-end-line="44" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/UserDao.js">
+    <entry file="file://$PROJECT_DIR$/app/model/Template.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/ProductController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TemplateController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="10" lean-forward="true" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/ProductDao.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/model/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="765">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
@@ -1099,28 +766,307 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/service/TemplateService.js">
+    <entry file="file://$PROJECT_DIR$/public/app/store/NavigationTree.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="605">
-          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/dao/TemplateDao.js">
+    <entry file="file://$PROJECT_DIR$/public/app/Application.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
-          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/Personnel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ext/packages/core/src/data/Model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="3486" column="28" selection-start-line="3486" selection-start-column="12" selection-end-line="3486" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/proxy/Api.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/Templates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ext/build/ext-all-rtl-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="38225" column="16" lean-forward="true" selection-start-line="38225" selection-start-column="16" selection-end-line="38225" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://DATABASE/ec3e203c-d128-4631-b562-d21ea2c40187.SCHEMA:iotnsp">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>DATABASE</ID>
+          <OriginalElement>ec3e203c-d128-4631-b562-d21ea2c40187.SCHEMA:iotnsp</OriginalElement>
+          <nodes>
+            <node x="" y="">ec3e203c-d128-4631-b562-d21ea2c40187.TABLE:iotnsp.products</node>
+            <node x="" y="">ec3e203c-d128-4631-b562-d21ea2c40187.TABLE:iotnsp.templates</node>
+            <node x="" y="">ec3e203c-d128-4631-b562-d21ea2c40187.TABLE:iotnsp.users</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="369.0" y="296.0" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Key columns</Category>
+            <Category>Columns</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/store/Products.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="5" selection-start-line="9" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/window/FullScreenWindow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="32" lean-forward="true" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/Template.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="45" lean-forward="true" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ec3e203c-d128-4631-b562-d21ea2c40187/schema/iotnsp/table/products">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/productmanage/ProductAddModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ec3e203c-d128-4631-b562-d21ea2c40187/schema/iotnsp/table/templates">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/main/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="43" column="13" lean-forward="true" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/productmanage/ProductList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" lean-forward="true" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/productmanage/ProductManage.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/iotnsp/iotnsp.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/iotnsp/MyServeice.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/iotnsp/CorporationInfo.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/authentication/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="36" column="34" lean-forward="true" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/authentication/Register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1106">
+          <caret line="169" column="35" lean-forward="true" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
+          <caret line="170" column="28" lean-forward="true" selection-start-line="170" selection-start-column="28" selection-end-line="170" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/model/Product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/classic/src/view/productmanage/ProductAdd.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="804">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/app/view/productmanage/ProductAddController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/ec3e203c-d128-4631-b562-d21ea2c40187/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="29" lean-forward="true" selection-start-column="29" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="4" lean-forward="true" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/TemplateController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/service/TemplateService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="29" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/model/Product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/mysql/lib/protocol/Parser.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://ec3e203c-d128-4631-b562-d21ea2c40187/schema/iotnsp/table/user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/util/ResultUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/UserDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/service/UserService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/util/DBUtil.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="126" column="94" selection-start-line="126" selection-start-column="94" selection-end-line="126" selection-end-column="94" />
-          <folding>
-            <element signature="n#!!block;n#getData1#0" />
-            <element signature="e#3549#4196#0" />
-          </folding>
+        <state relative-caret-position="288">
+          <caret line="85" column="5" lean-forward="true" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/service/ProductService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/DaoBase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/TemplateDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controller/ProductController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/templates.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/dao/ProductDao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>

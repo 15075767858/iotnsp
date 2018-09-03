@@ -10,6 +10,7 @@ Ext.define('iotnsp.Application', {
     stores: [
         'NavigationTree',
         'Industry',
+        'Templates'
         // TODO: add global / shared stores here
     ],
     models: [

@@ -5,6 +5,7 @@ const ProductService = require('../service/ProductService');
 const User = require('../model/User')
 
 
+
 var getProducts = async function (req, res, next) {
     var products = null;
 
@@ -33,3 +34,12 @@ var getProductById = async function (req, res, next) {
 
 
 exports.getProductById = getProductById;
+
+
+var updateProduct = async function (req, res, next) {
+
+
+    var product =await ProductService.productUpdate()
+
+
+}

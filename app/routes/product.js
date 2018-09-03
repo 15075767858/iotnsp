@@ -46,7 +46,7 @@ router.get('/:id', async function (req, res, next) {
 // })
 
 //增加
-router.post('/', async function (req, res, next) {
+router.post('/:id', async function (req, res, next) {
     var user = await UserService.userInfo(new User(req.cookies));
     var product = new Product(res.body);
     product = await ProductService.productAdd(user, product);
@@ -61,9 +61,11 @@ router.delete('/', function (req, res, next) {
     res.send("delete")
 })
 //更新
-router.put('/', function (req, res, next) {
+router.put('/:id', function (req, res, next) {
     console.log(req)
     var product = new Product(res.body);
+    //ProductController.
+
     ProductService.productUpdate(product);
     res.send("put")
 })
